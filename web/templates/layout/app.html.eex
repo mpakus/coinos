@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="my 1st app on Elixir just to parse and show eCoin's currency">
+    <meta name="author" content="MpaK - http://aomega.co">
+
+    <title>eCoins currency</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="alert alert-info"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger"><%= get_flash(@conn, :error) %></p>
+
+      <hr/>
+      <%= @inner %>
+      <hr/>
+
+    </div>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script>require("web/static/js/app")</script>
+  </body>
+</html>

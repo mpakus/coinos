@@ -1,0 +1,15 @@
+<div class="row">
+
+  <h2>eCoin currencies with Phoenix!</h2>
+
+  <div class="col-lg-6">
+    <h4>Bitecoin</h4>
+    <h2>$<%= @btc %></h2>
+  </div>
+
+  <div class="col-lg-6">
+    <h4>Litecoin</h4>
+    <h2>$<%= @ltc %></h2>
+  </div>
+</div>
+
